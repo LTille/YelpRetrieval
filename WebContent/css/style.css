@@ -1,0 +1,177 @@
+/*Reset*/
+* {
+  list-style: none;
+  margin: 0px;
+}
+
+/*Mixins*/
+/*Overlay*/
+.overlay {
+  background: url("http://cdn.playbuzz.com/cdn/d7a1e1b6-e240-4379-b722-32e893381e52/55c49549-861a-438a-8a0f-a73e13e5dc42.jpg") center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  /*opacity:0.8;*/
+}
+
+/*Pattern Overlay*/
+/*.pat {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1) url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQIW2NkYGD4D8SMQAwGcAY2AbBKDBUAVuYCBQPd34sAAAAASUVORK5CYII=");
+  max-width: 100%;
+}*/
+
+/*Wrappers*/
+.wrapper {
+   /*width: 95%; */
+  /*margin: 0 auto;*/
+  margin-top: 3%;
+
+  /*Typography*/
+  /*Form*/
+  /*Result*/
+}
+.wrapper h1 {
+  font: 40px Optima;
+  color: #FFF;
+  text-align: center;
+  text-shadow: #000 0px 2px 2px;
+  margin-bottom: 5%;
+}
+
+.wrapper a {
+  color: #FFF;
+  text-decoration: none;
+  font: 16px Optima;
+}
+.wrapper a:hover {
+  color: red;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+.wrapper .result {
+  color: #FFF;
+  text-decoration: none;
+  font: 16px Optima;
+  text-shadow: #000 0px 2px 2px;
+  text-align: center;
+  display: none;
+  /*margin: auto;*/
+  margin-bottom: 20px;
+}
+
+.search_bar {
+    background: #fff;
+    border: #b7b7b7 solid 1px;
+    border-radius: 3px;
+    box-shadow: 0 0 3px #ccc;
+    position: relative;
+    margin: auto;
+    font-family: Arial;
+    max-width: 420px;
+}
+.wrapper .search_bar input[type=text] {
+    border: none;
+    box-shadow: none;
+    font-weight: 600;
+    font-size: 14px;
+    width: 80%;
+    padding: .5em;
+    margin: 0;
+    overflow: hidden;
+}
+.wrapper .search_bar input[type=text]:focus {
+    outline: none;
+}
+.wrapper .search_bar button[type=submit] {
+    background: -webkit-linear-gradient(#237cd4, #1e6ab5);
+    background: linear-gradient(#237cd4, #1e6ab5);
+    color: rgba(255, 255, 255, 0);
+    border: 1px solid #1C62A8;
+    width: 10%;
+    min-width: 56px;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    border-radius: 0 3px 3px 0;
+    margin: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.wrapper .search_bar button[type=submit]:after {
+    content: '';
+    position: absolute;
+    top: 18%;
+    right: 0;
+    bottom: 22%;
+    left: 4%; 
+    background: url("http://media.lib.byu.edu/assets/images/searchbar/1.0/search-icon.svg") no-repeat center center;
+    background-size: contain;
+}
+.wrapper .search_bar button[type=submit]:hover, .search_bar button[type=submit]:focus {
+    background: -webkit-linear-gradient(#3388dd, #2174c7);
+    background: linear-gradient(#3388dd, #2174c7);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.form {
+  position: relative;
+}
+
+.res {
+  clear: both;
+  margin-top: 10px;
+  width: 100%;
+  position: relative;
+}
+
+.res h3, .res p {
+  color: #FFF;
+}
+.res h3 {
+  font: 17px Raleway;
+  font-weight: 700;
+  margin-bottom: 6px;
+  text-shadow: #000 0px 2px 2px;
+}
+.res p {
+  font: 13px Raleway;
+}
+
+/*Clearfix*/
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+html[xmlns] .clearfix {
+  display: block;
+}
+
+* html .clearfix {
+  height: 1%;
+}
